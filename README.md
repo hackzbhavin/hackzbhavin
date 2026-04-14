@@ -1,36 +1,85 @@
-<h1 align="center">Hi 👋, I'm Bhavin Patil</h1>
-<h3 align="center">Full Stack Developer + Aws Certified</h3>
+<h1 align="center">Hi, I'm Bhavin Patil</h1>
+<h3 align="center">Full Stack Engineer · AWS Certified Solutions Architect</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=hackzbhavin&label=Profile%20views&color=0e75b6&style=flat" alt="hackzbhavin" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=hackzbhavin" alt="hackzbhavin" /></a> </p>
-
-- 👨‍💻 All of my projects are available at [https://www.github.com/hackzbhavin](https://www.github.com/hackzbhavin)
-
-- 💬 Ask me about **react, react-native, mysql, aws, php, python,**
-
-- 📫 How to reach me **bhavinpatil28@gmail.com**
-
-<div style="padding:10px 20px">
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/bhavin-patil-413a601a0" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="bhavin-patil-413a601a0" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/hackzbhavin" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="hackzbhavin" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/hackzbhavin" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="hackzbhavin" height="30" width="40" /></a>
+<p align="center">
+  <a href="https://www.github.com/hackzbhavin" target="_blank">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/bhavin-patil-413a601a0" target="_blank">LinkedIn</a> ·
+  <a href="mailto:bhavinpatil28@gmail.com">Email</a>
 </p>
-</div>
 
-<div style="padding:10px 20px">
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://codeigniter.com" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/codeigniter.svg" alt="codeigniter" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="gatsby" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://graphql.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="graphql" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> </a> <a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a> <a href="https://kafka.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="kafka" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nestjs.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg" alt="nestjs" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg" alt="objectivec" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
+---
 
-</div>
+### About me
 
-<div style="padding:10px 20px">
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=hackzbhavin&show_icons=true&locale=en&layout=compact" alt="hackzbhavin" />
+I’m a Full Stack Engineer with 4+ years of experience building scalable, high-performance cloud‑native SaaS applications using React, TypeScript, NestJS, Go, and AWS services.[^resume]  
+I focus on system design, performance optimization, and cost‑efficient architectures for high‑traffic products.
 
-<h3>Leetcode Stats: </h3>
+- Designed and shipped production systems for global SaaS platforms.
+- Improved API performance through query optimization, caching, and better data models.
+- Reduced AWS infrastructure costs and led microservices and event‑driven backend initiatives.
 
-<p><img align="center" src="https://leetcard.jacoblin.cool/hackzbhavin?theme=dark&font=Roboto&ext=heatmap" alt="hackzbhavin" /></p>
-</div>
+[^resume]: Summary based on my resume (QuestionPro · Equip9 · AWS Certified Solutions Architect – Associate).
 
+---
+
+### What I work on
+
+- **Scalable backends & APIs** – NestJS/Node.js and Go services on AWS (Lambda, EC2, S3, DynamoDB, SQS, SNS).  
+- **System design & distributed systems** – microservices, event‑driven architecture, high‑availability designs.  
+- **Performance & cost optimization** – query tuning, caching, infra right‑sizing, and observability.  
+- **Web & mobile frontends** – React, Next.js, and React Native for SaaS dashboards and cross‑platform apps.
+
+---
+
+### Highlighted projects
+
+> Replace these links with your actual repos and add one‑line impact statements.
+
+- 🚀 (In Progress) **Flash Sale / Ticketing Backend** – high‑concurrency backend using Go/NestJS, Redis, and Postgres to handle thousands of users buying limited tickets without overselling.  
+- 🧮 **Salary Calculator (Clean Architecture + TDD)** – Python/TypeScript service with 4‑layer clean architecture and full test coverage for salary and metrics calculation.  
+- 📊 **SaaS Analytics Dashboard** – React + Next.js dashboard powered by microservices and GraphQL for real‑time business metrics.  
+- 📱 **React Native App** – production mobile app with real‑time communication and optimized MySQL queries for better performance.
+
+Each project is documented with a clear problem statement, architecture overview, and setup instructions.
+
+---
+
+### Tech stack
+
+**Languages**  
+JavaScript · TypeScript · Go · Python · PHP
+
+**Frontend**  
+React.js · Next.js · React Native · Redux
+
+**Backend**  
+Node.js · NestJS · Express.js · Django · Laravel
+
+**Cloud & DevOps**  
+AWS (Lambda, EC2, S3, DynamoDB, API Gateway, IAM, CloudFront, SNS, SQS) · Docker · Kubernetes · Terraform · GitHub Actions
+
+**Data & Messaging**  
+MySQL · DynamoDB · Redis · Kafka
+
+---
+
+### Connect with me
+
+- 💼 LinkedIn: [bhavin-patil-413a601a0](https://www.linkedin.com/in/bhavin-patil-413a601a0)  
+- 💻 HackerRank: [hackzbhavin](https://www.hackerrank.com/hackzbhavin)  
+- 🧠 LeetCode: [hackzbhavin](https://leetcode.com/hackzbhavin)  
+- 📫 Email: **bhavinpatil28@gmail.com**
+
+---
+
+### A bit of stats
+
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hackzbhavin&show_icons=true&locale=en&layout=compact" alt="Top languages" />
+</p>
+
+<h3>LeetCode</h3>
+
+<p align="left">
+  <img src="https://leetcard.jacoblin.cool/hackzbhavin?theme=dark&font=Roboto&ext=heatmap" alt="LeetCode stats" />
+</p>

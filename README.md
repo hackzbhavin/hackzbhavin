@@ -55,9 +55,15 @@ Same load test: p95 drops to ~8ms at 500 VUs.
 
 ### Highlighted Projects
 
+- 🤖 **(In Progress) Cinema Booking MCP Backend** — full-stack movie ticket booking API with **Model Context Protocol (MCP)** support. AI agents (Claude, etc.) query cinemas, search by name/city, and fetch details directly via MCP tools — no REST wrappers needed. Explores Sampling (in-tool AI generation) and Elicitation (mid-execution user prompts), with full observability via Prometheus + Grafana and load testing via k6.  
+  `NestJS 11` `MySQL 8` `Redis 7` `BullMQ` `MCP` `Prometheus` `Grafana` `k6`
+
 - 🚀 **(In Progress) Flash Sale / Ticketing Backend** — high-concurrency backend using Go/NestJS, Redis, and Postgres to handle thousands of users buying limited tickets without overselling.
+
 - 🧮 **Salary Calculator (Clean Architecture + TDD)** — Python/TypeScript service with 4-layer clean architecture and full test coverage for salary and metrics calculation.
+
 - 📊 **SaaS Analytics Dashboard** — React + Next.js dashboard powered by microservices and GraphQL for real-time business metrics.
+
 - 📱 **React Native App** — production mobile app with real-time communication and optimized MySQL queries for better performance.
 
 ***

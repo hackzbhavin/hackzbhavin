@@ -33,7 +33,9 @@ I focus on the gap between **working code and production-grade architecture** �
 
 ### Architecture Case Studies
 
-> Two repos. Same problem. Two different engineering levels. Real load test results.
+> Repos built to study real problems. Not tutorials — actual systems with load tests, failure modes, and architectural trade-offs.
+
+---
 
 #### 📉 [error-logger-naive-to-production](https://github.com/hackzbhavin/error-logger-naive-to-production)
 A synchronous error logging system — built the way most engineers write their first version.  
@@ -49,22 +51,88 @@ Same load test: p95 drops to ~8ms at 500 VUs.
 
 `NestJS` `Redis` `BullMQ` `MySQL` `TypeORM` `k6` `Prometheus` `Grafana` `cAdvisor`
 
-> The takeaway: the gap between these two repos is not about more code — it is about understanding **which parts of a system need to be fast and which parts just need to eventually be correct**.
+> **Takeaway:** the gap between these two repos is not about more code — it is about understanding which parts of a system need to be fast and which parts just need to eventually be correct.
+
+---
+
+#### 🔒 [nestjs-throttling-mastery](https://github.com/hackzbhavin/nestjs-throttling-mastery)
+Production-grade, per-entity throttling — built after studying how Shopify and Netflix actually do it at scale.
+
+The hard constraint: no API gateway. Everything enforced at the app layer, per `entity_id`, so one customer being throttled has zero effect on others.
+
+The tricky part was the **2-server same-DC fallback** — when Redis goes down, two in-memory stores diverge and silently double your effective limit. Solved with a 3-mode state machine:
+
+```
+REDIS ──(3 failures)──► PEER SYNC ──(5 failures)──► LOCAL / NODE_COUNT
+  ▲                          │                              │
+  └──────── Redis ping ok ───┴──────────────────────────────┘
+```
+
+- **REDIS mode** — Lua atomic token bucket. Single source of truth. No race conditions across servers.
+- **PEER mode** — Both servers gossip snapshots every 100ms. Minimum token count wins. Overshoot window: 100ms max.
+- **LOCAL mode** — Redis + peer both unreachable. Each node enforces `limit / node_count`. Accepts capacity halving in exchange for zero downtime.
+- **MySQL flush** — Active only in LOCAL mode. Persists counters every 5s so limits survive server restarts during extended outages.
+
+```go
+// Same idea, different language — a Go sketch of the token bucket
+func (b *Bucket) Consume(entityID string, cost int) (allowed bool, remaining int) {
+    b.mu.Lock()
+    defer b.mu.Unlock()
+
+    now := time.Now()
+    entry, ok := b.buckets[entityID]
+    if !ok {
+        entry = &BucketEntry{Tokens: float64(b.limit), LastRefill: now}
+        b.buckets[entityID] = entry
+    }
+
+    // Refill based on elapsed time
+    elapsed := now.Sub(entry.LastRefill).Seconds()
+    entry.Tokens = math.Min(float64(b.limit), entry.Tokens + elapsed*b.refillRate)
+    entry.LastRefill = now
+
+    if entry.Tokens < float64(cost) {
+        return false, int(entry.Tokens)
+    }
+
+    entry.Tokens -= float64(cost)
+    return true, int(entry.Tokens)
+}
+```
+
+Load tested with k6. Three concurrent entities — one behaving badly, two behaving normally. The two normal ones never see a 429.
+
+`NestJS` `Redis Lua` `Bull` `MySQL` `Circuit Breaker` `Peer Sync` `k6`
+
+---
+
+#### 🎬 [cine-mcp](https://github.com/hackzbhavin/cine-mcp)
+Full-stack movie ticket booking API with **Model Context Protocol (MCP)** support.
+
+The idea: instead of building a frontend for everything, expose your backend as MCP tools so AI agents (Claude, GPT, custom agents) can query cinemas, search by name/city, check showtimes, and book seats — no REST wrappers, no glue code.
+
+Explores two MCP primitives most people skip:
+- **Sampling** — the server asks the AI to generate something mid-tool execution (e.g. generate a booking summary).
+- **Elicitation** — the server pauses execution to ask the user a follow-up question from inside a tool.
+
+`NestJS 11` `MySQL 8` `Redis 7` `BullMQ` `MCP SDK` `Prometheus` `Grafana` `k6`
+
+---
+
+#### 🚀 [rush-queue](https://github.com/hackzbhavin/rush-queue)
+High-concurrency backend for flash sales and ticket drops — handles thousands of simultaneous buyers without overselling a single unit.
+
+The core problem: at 10,000 concurrent requests, a simple `SELECT + UPDATE` races. You need atomic reservation without locking the entire inventory table.
+
+`NestJS` `Redis` `BullMQ` `MySQL`
 
 ***
 
 ### Highlighted Projects
 
-- 🤖 **(In Progress) Cinema Booking MCP Backend** — full-stack movie ticket booking API with **Model Context Protocol (MCP)** support. AI agents (Claude, etc.) query cinemas, search by name/city, and fetch details directly via MCP tools — no REST wrappers needed. Explores Sampling (in-tool AI generation) and Elicitation (mid-execution user prompts), with full observability via Prometheus + Grafana and load testing via k6.  
-  `NestJS 11` `MySQL 8` `Redis 7` `BullMQ` `MCP` `Prometheus` `Grafana` `k6`
-
-- 🚀 **(In Progress) Flash Sale / Ticketing Backend** — high-concurrency backend using Go/NestJS, Redis, and Postgres to handle thousands of users buying limited tickets without overselling.
-
 - 🧮 **Salary Calculator (Clean Architecture + TDD)** — Python/TypeScript service with 4-layer clean architecture and full test coverage for salary and metrics calculation.
-
 - 📊 **SaaS Analytics Dashboard** — React + Next.js dashboard powered by microservices and GraphQL for real-time business metrics.
-
-- 📱 **React Native App** — production mobile app with real-time communication and optimized MySQL queries for better performance.
+- 📱 **React Native App** — production mobile app with real-time communication and optimized MySQL queries.
 
 ***
 
@@ -77,7 +145,7 @@ JavaScript · TypeScript · Go · Python · PHP
 React.js · Next.js · React Native · Redux
 
 **Backend**
-Node.js · NestJS · Express.js · Django · Laravel
+Node.js · NestJS · Express.js · Go · Django · Laravel
 
 **Cloud & DevOps**
 AWS (Lambda, EC2, S3, DynamoDB, API Gateway, IAM, CloudFront, SNS, SQS) · Docker · Kubernetes · Terraform · GitHub Actions
